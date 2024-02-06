@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_393895_credit_0.CreditBucketService</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>CreditBucketService</name>
+        <script><![CDATA[var CreditBucketService = Class.create();
+CreditBucketService.prototype = {
+    initialize: function() {
+        this.table = 'x_393895_credit_0_credit_bucket';
+    },
+
+    newCreditBucketProcess: function(creditBucketGr) {
+        var balance;
+        var previousCBGr = this.getPreviousCreditBucket(creditBucketGr.getValue('company'));
+        //gs.info('last cb: ' + previousCBGr.number);
+        //gs.info('last cb balance: ' + previousCBGr.balance_amount);
+        if (previousCBGr) {
+            // Set Previous Credit Bucket Inactive
+            if (previousCBGr.active == true) {
+                previousCBGr.active = false;
+                previousCBGr.update();
+            }
+
+            // Calculate New Balance Amount
+            balance = creditBucketGr.amount + previousCBGr.balance_amount;
+        } else
+            balance = creditBucketGr.amount;
+        return balance;
+    },
+
+    getPreviousCreditBucket: function(company) {
+        var cbGr = new GlideRecord('x_393895_credit_0_credit_bucket');
+        cbGr.addEncodedQuery("company=" + company);
+        cbGr.orderByDesc('sys_created_on');
+        cbGr.setLimit(1);
+        cbGr.query();
+        if (cbGr.next()) {
+            return cbGr;
+        }
+    },
+
+    calculateCredits: function(timeWorkedGr) {
+        //get company credit rates
+        var rate;
+
+        var companyRate = new CompanyRateService().getCurrentCompanyRateByTimeWorkedRecord(timeWorkedGr);
+
+        var taskService = new TaskService();
+        //get Task Class Name
+        var taskClass = taskService.getTaskClassById(timeWorkedGr.task);
+
+        //calculate credits incidents
+        if (taskClass == 'incident') {
+            var prio = taskService.getTaskPrioById(timeWorkedGr.task);
+            //prio 1
+            if (prio == '1')
+                rate = companyRate.p1_hourly_rate;
+            //prio 2
+            else if (prio == '2')
+                rate = companyRate.p2_hourly_rate;
+            //prio 3
+            else if (prio == '3')
+                rate = companyRate.p3_hourly_rate;
+            //prio 4
+            else
+                rate = companyRate.p4_hourly_rate;
+        }
+        if (taskClass == 'change_request') {
+            rate = companyRate.change_request_hourly_rate;
+        }
+
+        //calculate credits incidents
+        return rate * ((timeWorkedGr.time_in_seconds) / 3600);
+    },
+
+
+    //     updateBalanceAmount: function(taskTimeWorkedGr) {
+
+    //         var activeBucket = this.getActiveCreditBucketByCompanyId(taskTimeWorkedGr.task.company);
+    // 		currentBalance = parseFloat(activeBucket.balance_amount);
+    // 		credits = parseFloat(this.calculateCredits(taskTimeWorkedGr));
+    //         activeBucket.balance_amount = currentBalance - credits;
+    // 		gs.info(activeBucket.balance_amount);
+
+    //     },
+
+    updateBalanceAmount: function(taskTimeWorkedGr) {
+        var activeBucket = this.getActiveCreditBucketByCompanyId(taskTimeWorkedGr.task.company);
+        var currentBalance = parseFloat(activeBucket.balance_amount);
+        var credits = parseFloat(this.calculateCredits(taskTimeWorkedGr));
+        activeBucket.balance_amount = currentBalance - credits;
+		activeBucket.update();
+
+        // Update the reference field on the Time Worked record
+        taskTimeWorkedGr.u_credit_bucket = activeBucket.getUniqueValue(); // Assuming u_credit_bucket is the reference field
+        taskTimeWorkedGr.update();
+
+        gs.info(activeBucket.balance_amount);
+    },
+
+
+    getActiveCreditBucketByCompanyId: function(companyId) {
+        var bucketGr = new GlideRecord(this.table);
+        bucketGr.addEncodedQuery('active=true^company=' + companyId);
+        bucketGr.query();
+        while (bucketGr.next()) {
+            if (bucketGr.getRowCount() == 1) {
+                gs.info('bucketnr: ' + bucketGr.number);
+                return bucketGr;
+            }
+            gs.info('more then 1 active bucket for companyId: ' + companyId);
+            return '';
+        }
+        return '';
+    },
+
+
+    type: 'CreditBucketService'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-11 13:00:52</sys_created_on>
+        <sys_id>ab5146614707f910a6b486c8436d43c5</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name>CreditBucketService</sys_name>
+        <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+        <sys_update_name>sys_script_include_ab5146614707f910a6b486c8436d43c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 10:43:38</sys_updated_on>
+    </sys_script_include>
+</record_update>

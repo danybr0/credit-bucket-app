@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <conditions/>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+//     // Get the "valid from" field's value
+//     var validFromDate = g_form.getValue('valid_from');
+
+//     // Get the "valid to" field's value
+//     var validToDate = g_form.getValue('valid_to');
+
+//     // Get the current date
+//     // var currentDate = new Date();
+
+//     // Compare the selected date with the current date
+//     if (validFromDate < validToDate) {
+//         // Reset the "valid from" field
+//         g_form.setValue('valid_from', '');
+
+//         // Display an error message
+//         g_form.addErrorMessage('Valid From date cannot be in the past.');
+//     }
+	
+	
+	// Get the values of the "Valid From" and "Valid To" fields
+    var validFromDate = g_form.getValue('valid_from');
+    var validToDate = g_form.getValue('valid_to');
+
+    // Check if both fields have values
+    if (validFromDate && validToDate) {
+        // Convert the values to Date objects
+        var fromDate = new Date(validFromDate);
+        var toDate = new Date(validToDate);
+
+        // Compare the dates
+        if (fromDate.getNumericValue() > toDate.getNumericValue()) {
+            // Reset the "Valid To" field
+            g_form.setValue('valid_to', '');
+
+            // Display an error message
+            g_form.addErrorMessage('Valid To date cannot be before Valid From date.');
+        }
+    }
+
+}]]></script_true>
+        <set_values/>
+        <short_description>RestrictPastDate</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-13 14:24:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ae6b24da47c3bd10a6b486c8436d4377</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>RestrictPastDate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+        <sys_update_name>sys_ui_policy_ae6b24da47c3bd10a6b486c8436d4377</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-13 14:59:52</sys_updated_on>
+        <table>x_393895_credit_0_company_extensible</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

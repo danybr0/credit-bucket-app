@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_393895_credit_0.TaskService</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>TaskService</name>
+        <script><![CDATA[var TaskService = Class.create();
+TaskService.prototype = {
+    initialize: function() {
+		this.table = 'task';
+    },
+	
+	getTaskClassById: function(taskId){
+		var taskGr = new GlideRecord(this.table);
+		taskGr.get(taskId);
+		if(taskGr){
+			return taskGr.sys_class_name;
+		}
+		return '';
+	},
+
+	getTaskPrioById: function(taskId){
+		var taskGr = new GlideRecord(this.table);
+		taskGr.get(taskId);
+		if(taskGr){
+			return taskGr.priority;
+		}
+		else
+			return '';
+	},
+
+    type: 'TaskService'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-11 15:08:00</sys_created_on>
+        <sys_id>5d42aaa54787f910a6b486c8436d43cd</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>TaskService</sys_name>
+        <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+        <sys_update_name>sys_script_include_5d42aaa54787f910a6b486c8436d43cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-11 15:24:13</sys_updated_on>
+    </sys_script_include>
+</record_update>

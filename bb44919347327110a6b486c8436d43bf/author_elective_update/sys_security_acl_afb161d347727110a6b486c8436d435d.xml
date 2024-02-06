@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_393895_credit_0_company_extensible</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-04 10:36:30</sys_created_on>
+        <sys_id>afb161d347727110a6b486c8436d435d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_393895_credit_0_company_extensible</sys_name>
+        <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+        <sys_update_name>sys_security_acl_afb161d347727110a6b486c8436d435d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-04 10:36:30</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</application>
+        <file_path/>
+        <instance_id>bca31ca0dbf8d4d85749cac5059619ac</instance_id>
+        <instance_name>dev103152</instance_name>
+        <name>sys_security_acl_afb161d347727110a6b486c8436d435d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description/><local_or_existing>Local</local_or_existing><name>x_393895_credit_0_company_extensible</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-04 10:36:30</sys_created_on><sys_id>afb161d347727110a6b486c8436d435d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_393895_credit_0_company_extensible</sys_name><sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package><sys_policy/><sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope><sys_update_name>sys_security_acl_afb161d347727110a6b486c8436d435d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-04 10:36:30</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-414417609</payload_hash>
+        <record_name>x_393895_credit_0_company_extensible</record_name>
+        <reverted_from/>
+        <source>c854d19347327110a6b486c8436d4363</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-04 10:36:30</sys_created_on>
+        <sys_id>e3b161d347727110a6b486c8436d4360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c3466a00f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-04 10:36:30</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>2bb161d364727110de7b7680fc6f4f5f</update_guid>
+        <update_guid_history>2bb161d364727110de7b7680fc6f4f5f:-414417609</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-05 16:22:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>114b4aeacdf3431c82bd0439ab759190</sys_id>
+        <sys_metadata>afb161d347727110a6b486c8436d435d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_393895_credit_0_company_extensible</sys_name>
+        <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+        <sys_parent display_value="x_393895_credit_0_company_extensible">a6b1ed9347727110a6b486c8436d43e8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+        <sys_scope_delete display_value="">1e94e08ae5ec41848b36991dbcfb5dc1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_afb161d347727110a6b486c8436d435d</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_afb161d347727110a6b486c8436d435d">e3b161d347727110a6b486c8436d4360</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-05 16:22:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

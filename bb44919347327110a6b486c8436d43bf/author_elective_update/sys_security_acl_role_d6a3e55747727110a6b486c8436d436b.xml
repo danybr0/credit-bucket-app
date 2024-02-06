@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-04 10:44:52</sys_created_on>
+        <sys_id>d6a3e55747727110a6b486c8436d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_393895_credit_0_credit_bucket.x_393895_credit_0.admin</sys_name>
+        <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+        <sys_security_acl display_value="x_393895_credit_0_credit_bucket">56a3e55747727110a6b486c8436d435c</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_d6a3e55747727110a6b486c8436d436b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-04 10:44:52</sys_updated_on>
+        <sys_user_role display_value="x_393895_credit_0.admin" name="x_393895_credit_0.admin">0854d19347327110a6b486c8436d4367</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</application>
+        <file_path/>
+        <instance_id>bca31ca0dbf8d4d85749cac5059619ac</instance_id>
+        <instance_name>dev103152</instance_name>
+        <name>sys_security_acl_role_d6a3e55747727110a6b486c8436d436b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-04 10:44:52</sys_created_on><sys_id>d6a3e55747727110a6b486c8436d436b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_393895_credit_0_credit_bucket.x_393895_credit_0.admin</sys_name><sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package><sys_policy/><sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope><sys_security_acl display_value="x_393895_credit_0_credit_bucket">56a3e55747727110a6b486c8436d435c</sys_security_acl><sys_update_name>sys_security_acl_role_d6a3e55747727110a6b486c8436d436b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-04 10:44:52</sys_updated_on><sys_user_role display_value="x_393895_credit_0.admin" name="x_393895_credit_0.admin">0854d19347327110a6b486c8436d4367</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-665331028</payload_hash>
+        <record_name>x_393895_credit_0_credit_bucket.x_393895_credit_0.admin</record_name>
+        <reverted_from/>
+        <source>c854d19347327110a6b486c8436d4363</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-04 10:44:52</sys_created_on>
+        <sys_id>5ea3e55747727110a6b486c8436d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c346e4b970000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-04 10:44:52</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>92a3e557f37271105031a7402c78106d</update_guid>
+        <update_guid_history>92a3e557f37271105031a7402c78106d:-665331028</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_393895_credit_0_credit_bucket.x_393895_credit_0.admin">3b57f32347beb110a6b486c8436d43ec</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-05 16:08:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>14ad200998e0455882272521064e6c10</sys_id>
+        <sys_metadata>d6a3e55747727110a6b486c8436d436b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_393895_credit_0_credit_bucket.x_393895_credit_0.admin</sys_name>
+        <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+        <sys_parent display_value="">56a3e55747727110a6b486c8436d435c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+        <sys_scope_delete display_value="">1e94e08ae5ec41848b36991dbcfb5dc1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_d6a3e55747727110a6b486c8436d436b</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_d6a3e55747727110a6b486c8436d436b">5ea3e55747727110a6b486c8436d436d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-05 16:08:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
