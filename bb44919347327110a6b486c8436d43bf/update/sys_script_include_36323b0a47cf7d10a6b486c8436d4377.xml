@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_393895_credit_0.FilterCompany</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>FilterCompany</name>
+        <script><![CDATA[var FilterCompany = Class.create();
+FilterCompany.prototype = {
+    initialize: function() {
+    },
+	
+	// Function to filter and retrieve the allowed companies
+    filterCompanies: function() {
+		
+		var allowedCompanySysIDs = [
+            '71e7854b97d839107477b38fe153aff1',
+            '96518760731823002728660c4cf6a7c9'
+        ]; // Define the allowed company sys_ids
+
+        return allowedCompanySysIDs;
+		
+    },
+
+    type: 'FilterCompany'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-13 10:12:25</sys_created_on>
+        <sys_id>36323b0a47cf7d10a6b486c8436d4377</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>FilterCompany</sys_name>
+        <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+        <sys_update_name>sys_script_include_36323b0a47cf7d10a6b486c8436d4377</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-18 08:22:46</sys_updated_on>
+    </sys_script_include>
+</record_update>

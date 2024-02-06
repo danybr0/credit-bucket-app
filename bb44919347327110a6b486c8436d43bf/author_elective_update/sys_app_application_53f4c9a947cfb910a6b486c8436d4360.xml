@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-11 08:18:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>53f4c9a947cfb910a6b486c8436d4360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Company Rates</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+        <sys_update_name>sys_app_application_53f4c9a947cfb910a6b486c8436d4360</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-11 08:18:54</sys_updated_on>
+        <title>Company Rates</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</application>
+        <file_path/>
+        <instance_id>bca31ca0dbf8d4d85749cac5059619ac</instance_id>
+        <instance_name>dev103152</instance_name>
+        <name>sys_app_application_53f4c9a947cfb910a6b486c8436d4360</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name/><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-11 08:18:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>53f4c9a947cfb910a6b486c8436d4360</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Company Rates</sys_name><sys_overrides/><sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package><sys_policy/><sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope><sys_update_name>sys_app_application_53f4c9a947cfb910a6b486c8436d4360</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-11 08:18:54</sys_updated_on><title>Company Rates</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-469725623</payload_hash>
+        <record_name>Company Rates</record_name>
+        <reverted_from/>
+        <source>c854d19347327110a6b486c8436d4363</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-11 08:18:54</sys_created_on>
+        <sys_id>506505a947cfb910a6b486c8436d43ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c57f52cd30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-11 08:18:54</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>946505a96dcfb910eb496f34b6f48aaa</update_guid>
+        <update_guid_history>946505a96dcfb910eb496f34b6f48aaa:-469725623</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Company Rates">335f85e54703f910a6b486c8436d4386</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-11 09:02:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>0e670617985f4d148864aa0cdc418290</sys_id>
+        <sys_metadata>53f4c9a947cfb910a6b486c8436d4360</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Company Rates</sys_name>
+        <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+        <sys_scope_delete display_value="">1e94e08ae5ec41848b36991dbcfb5dc1</sys_scope_delete>
+        <sys_update_name>sys_app_application_53f4c9a947cfb910a6b486c8436d4360</sys_update_name>
+        <sys_update_version display_value="sys_app_application_53f4c9a947cfb910a6b486c8436d4360">506505a947cfb910a6b486c8436d43ab</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-11 09:02:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

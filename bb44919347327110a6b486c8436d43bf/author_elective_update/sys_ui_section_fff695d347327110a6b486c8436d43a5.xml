@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="fff695d347327110a6b486c8436d43a5" sys_domain="global" table="x_393895_credit_0_company" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-04 09:49:33</sys_created_on>
+            <sys_id>b3f695d347327110a6b486c8436d43aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_393895_credit_0_company" sys_domain="global" view="Default view">fff695d347327110a6b486c8436d43a5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-04 09:49:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_393895_credit_0_company</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-04 09:49:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fff695d347327110a6b486c8436d43a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_393895_credit_0_company</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+            <sys_update_name>sys_ui_section_fff695d347327110a6b486c8436d43a5</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-04 09:49:33</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</application>
+        <file_path/>
+        <instance_id>bca31ca0dbf8d4d85749cac5059619ac</instance_id>
+        <instance_name>dev103152</instance_name>
+        <name>sys_ui_section_fff695d347327110a6b486c8436d43a5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="fff695d347327110a6b486c8436d43a5" sys_domain="global" table="x_393895_credit_0_company" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-04 09:49:33</sys_created_on><sys_id>b3f695d347327110a6b486c8436d43aa</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_393895_credit_0_company" sys_domain="global" view="Default view">fff695d347327110a6b486c8436d43a5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-04 09:49:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_393895_credit_0_company</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-04 09:49:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fff695d347327110a6b486c8436d43a5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_393895_credit_0_company</sys_name><sys_overrides/><sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package><sys_policy/><sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope><sys_update_name>sys_ui_section_fff695d347327110a6b486c8436d43a5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-04 09:49:33</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1550760968</payload_hash>
+        <record_name>Company </record_name>
+        <reverted_from/>
+        <source>c854d19347327110a6b486c8436d4363</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-04 09:49:33</sys_created_on>
+        <sys_id>73f695d347327110a6b486c8436d43ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c343ba5400000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-04 09:49:33</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>3bf695d359327110a17187934efed4ab</update_guid>
+        <update_guid_history>3bf695d359327110a17187934efed4ab:1550760968,bbf695d3633271109507b194b8408da9:-134260200</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-05 16:06:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>75943c42d70e4090803b8b430f169100</sys_id>
+        <sys_metadata>fff695d347327110a6b486c8436d43a5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_393895_credit_0_company</sys_name>
+        <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+        <sys_parent display_value="">cf46591747327110a6b486c8436d43db</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+        <sys_scope_delete display_value="">1e94e08ae5ec41848b36991dbcfb5dc1</sys_scope_delete>
+        <sys_update_name>sys_ui_section_fff695d347327110a6b486c8436d43a5</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_fff695d347327110a6b486c8436d43a5">73f695d347327110a6b486c8436d43ac</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-05 16:06:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

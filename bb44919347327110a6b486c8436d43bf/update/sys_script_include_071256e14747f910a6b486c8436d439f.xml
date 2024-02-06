@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_393895_credit_0.CompanyRateService</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>CompanyRateService</name>
+        <script><![CDATA[var CompanyRateService = Class.create();
+CompanyRateService.prototype = {
+    initialize: function() {
+        this.table = 'x_393895_credit_0_company_extensible';
+    },
+
+//     getCurrentCompanyRateByTimeWorkedRecord: function(timeWorkedGr) {
+// 		var gdt = new GlideDateTime(timeWorkedGr.task.opened_at);
+//         var companyRateGr = new GlideRecord('x_393895_credit_0_company_extensible');
+// 		var query = "company="+ timeWorkedGr.task.company+"^valid_from<="+gdt+"^valid_to>="+gdt;
+// 		//gs.info('encoded query: ' + query);
+// 		companyRateGr.addEncodedQuery("company="+ timeWorkedGr.task.company+"^valid_from<="+gdt+"^valid_to>="+gdt);
+//         companyRateGr.query();
+//         if(companyRateGr.next()) {
+// 			return companyRateGr;
+//         }
+// 	},
+	
+	getCurrentCompanyRateByTimeWorkedRecord: function(timeWorkedGr) {
+		var dateField = timeWorkedGr.u_date; // the date field in the task time worked record
+		var companyRateGr = new GlideRecord('x_393895_credit_0_company_extensible');
+		var query = "company=" + timeWorkedGr.task.company +
+			"^valid_from<=" + dateField +
+			"^valid_to>=" + dateField;
+
+		companyRateGr.addEncodedQuery(query);
+		gs.info('encoded query: ' + query);
+		companyRateGr.query();
+
+		if (companyRateGr.next()) {
+			return companyRateGr;
+		}
+	},
+
+
+    type: 'CompanyRateService'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-11 14:21:08</sys_created_on>
+        <sys_id>071256e14747f910a6b486c8436d439f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>CompanyRateService</sys_name>
+        <sys_package display_value="Credit bucket" source="x_393895_credit_0">bb44919347327110a6b486c8436d43bf</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Credit bucket">bb44919347327110a6b486c8436d43bf</sys_scope>
+        <sys_update_name>sys_script_include_071256e14747f910a6b486c8436d439f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 10:17:16</sys_updated_on>
+    </sys_script_include>
+</record_update>
